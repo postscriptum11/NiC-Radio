@@ -1,0 +1,494 @@
+
+>>> Kult Arahja official (target: noc)
+  CANDIDATE: A8d3QBMWUgs | KULT - Arahja [OFFICIAL AUDIO] | 216s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Arahja [OFFICIAL AUDIO]
+  OK: A8d3QBMWUgs,216,KULT - Arahja
+
+>>> Kult Baranek official (target: noc)
+  CANDIDATE: DqBuIaa2-_s | KULT - Baranek [OFFICIAL VIDEO] | 272s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Baranek [OFFICIAL VIDEO]
+  OK: DqBuIaa2-_s,272,KULT - Baranek
+
+>>> Kult Lewe dziwki w lesie official (target: noc)
+  NO RESULTS
+
+>>> Kult Gdy nie ma dzieci official (target: noc)
+  CANDIDATE: I8NcELiIMHg | KULT - Gdy nie ma dzieci [OFFICIAL VIDEO] | 193s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Gdy nie ma dzieci [OFFICIAL VIDEO]
+  OK: I8NcELiIMHg,193,KULT - Gdy nie ma dzieci
+
+>>> Kult Hej czy nie wiecie (target: noc)
+  CANDIDATE: sK9dKSPyNPw | KULT - Hej czy nie wiecie [POL'AND'ROCK FESTIVAL 2019 - OFFICIAL AUDIO] | 395s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Hej czy nie wiecie [POL'AND'ROCK FESTIVAL 2019 - OFFICIAL AUDIO]
+  OK: sK9dKSPyNPw,395,KULT - Hej czy nie wiecie
+
+>>> Kult Polska (target: noc)
+  CANDIDATE: x3kicEsx7g0 | KULT - Polska [OFFICIAL VIDEO] | 326s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Polska [OFFICIAL VIDEO]
+  OK: x3kicEsx7g0,326,KULT - Polska
+
+>>> Kult Wiosna (target: noc)
+  CANDIDATE: CGVGsvhyy5M | KULT - Wróci wiosna, baronowo [OFFICIAL AUDIO] | 343s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Wróci wiosna, baronowo [OFFICIAL AUDIO]
+  OK: CGVGsvhyy5M,343,KULT - Wróci wiosna, baronowo
+
+>>> Lady Pank Zawsze tam gdzie ty (target: noc)
+  CANDIDATE: csGo9-sPVRY | Lady Pank - Zawsze tam gdzie Ty | 259s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Lady Pank - Zawsze tam gdzie Ty
+  OK: csGo9-sPVRY,259,Lady Pank - Zawsze tam gdzie Ty
+
+>>> Lady Pank Mniej niz zero (target: noc)
+  CANDIDATE: Lc-26SnSmok | Lady Pank - Mniej ni¿ zero | 239s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Lady Pank - Mniej ni¿ zero
+  OK: Lc-26SnSmok,239,Lady Pank - Mniej ni¿ zero
+
+>>> Lady Pank Tacy sami (target: noc)
+  CANDIDATE: 2lZNlsEoc9Q | Lady Pank - Tacy sami | 246s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Lady Pank - Tacy sami
+  OK: 2lZNlsEoc9Q,246,Lady Pank - Tacy sami
+
+>>> Republika Biala flaga Ciechowski (target: noc)
+  CANDIDATE: 8BU3hri5ohk | Bia³a flaga (Live) | 321s | Republika | verified=True
+  OEMBED: Bia³a flaga (Live)
+  OK: 8BU3hri5ohk,321,Bia³a flaga
+
+>>> Republika Odchodzac (target: noc)
+  CANDIDATE: Iioi5LjzZo8 | Republika - Odchodz¹c [Official Music Video] | 235s | Republika | verified=True
+  OEMBED: Republika - Odchodz¹c [Official Music Video]
+  OK: Iioi5LjzZo8,235,Republika - Odchodz¹c
+
+>>> Republika Telefony (target: noc)
+  CANDIDATE: WcwZcqeGccw | Telefony (Live) | 265s | Republika | verified=True
+  OEMBED: Telefony (Live)
+  OK: WcwZcqeGccw,265,Telefony
+
+>>> Dzem Whisky Riedel (target: noc)
+  CANDIDATE: 3h1igHkD0Vk | Whisky (1992 Remaster) | 593s | ZespolDzem | verified=True
+  OEMBED: Whisky (1992 Remaster)
+  OK: 3h1igHkD0Vk,593,Whisky
+
+>>> Dzem Wehukul czasu (target: noc)
+  CANDIDATE: dsu3E4bEwBs | D¿em - 35 Urodziny - Wehiku³ czasu | 408s | ZespolDzem | verified=True
+  OEMBED: D¿em - 35 Urodziny - Wehiku³ czasu
+  OK: dsu3E4bEwBs,408,D¿em - 35 Urodziny - Wehiku³ czasu
+
+>>> Dzem Czerwony jak cegla (target: noc)
+  CANDIDATE: n7h4l7ayAhU | Czerwony Jak Ceg³a (2003 Remaster) | 313s | ZespolDzem | verified=True
+  OEMBED: Czerwony Jak Ceg³a (2003 Remaster)
+  OK: n7h4l7ayAhU,313,Czerwony Jak Ceg³a
+
+>>> Budka Suflera Jolka Jolka (target: noc)
+  CANDIDATE: NpZHBMjyzN0 | Budka Suflera – Jolka, Jolka #Woodstock2014 | 421s | Krêcio³aTV | verified=True
+  OEMBED: Budka Suflera – Jolka, Jolka #Woodstock2014
+  TITLE MISMATCH: Budka Suflera – Jolka, Jolka #Woodstock2014 | author=Krêcio³aTV
+
+>>> Budka Suflera Czas olbrzymow (target: noc)
+  CANDIDATE: RGM7bMR0cio | Budka Suflera - Gdyby Jutra Nie By³o (Nowoœæ 2019) | 224s | Budka Suflera | verified=True
+  OEMBED: Budka Suflera - Gdyby Jutra Nie By³o (Nowoœæ 2019)
+  TITLE MISMATCH: Budka Suflera - Gdyby Jutra Nie By³o (Nowoœæ 2019) | author=Budka Suflera
+
+>>> Budka Suflera Sen o Victorii (target: noc)
+  CANDIDATE: 2xuq71bLtj8 | Sen o Victorii (2003 Remaster) | 344s | ZespolDzem | verified=True
+  OEMBED: Sen o Victorii (2003 Remaster)
+  TITLE MISMATCH: Sen o Victorii | author=ZespolDzem
+
+>>> Perfect Ko³ysanka dla nieznajomej (target: noc)
+  CANDIDATE: hHx7qyFufYc | Perfect - Ko³ysanka dla nieznajomej | 215s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Perfect - Ko³ysanka dla nieznajomej
+  OK: hHx7qyFufYc,215,Perfect - Ko³ysanka dla nieznajomej
+
+>>> Perfect Autobiografia (target: noc)
+  CANDIDATE: 1n0MupX-7AM | Perfect - Autobiografia (Official audio) | 274s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Perfect - Autobiografia (Official audio)
+  OK: 1n0MupX-7AM,274,Perfect - Autobiografia
+
+>>> Perfect Nie pytaj o Polske (target: noc)
+  CANDIDATE: kZuYff81-Fc | Perfect - Wszystko ma swój czas (official video) | 238s | Agencja Muzyczna Polskiego Radia | verified=True
+  OEMBED: Perfect - Wszystko ma swój czas (official video)
+  TITLE MISMATCH: Perfect - Wszystko ma swój czas | author=Agencja Muzyczna Polskiego Radia
+
+>>> Maanam Krakowski spleen (target: noc)
+  CANDIDATE: Yspb7Pu5fvc | Krakowski spleen (2011 Remaster) | 274s | Maanam | verified=True
+  OEMBED: Krakowski spleen (2011 Remaster)
+  OK: Yspb7Pu5fvc,274,Krakowski spleen
+
+>>> Maanam O! Maanam (target: noc)
+  CANDIDATE: hIlJrDTv2kI | Maanam - Po prostu b¹dŸ [Official Music Video] | 217s | Maanam | verified=True
+  OEMBED: Maanam - Po prostu b¹dŸ [Official Music Video]
+  TITLE MISMATCH: Maanam - Po prostu b¹dŸ | author=Maanam
+
+>>> T.Love Warszawa official (target: poranek)
+  CANDIDATE: 59JGY-K0BeQ | T.Love - Warszawa [Official Music Video] | 257s | T.LOVE | verified=True
+  OEMBED: T.Love - Warszawa [Official Music Video]
+  OK: 59JGY-K0BeQ,257,T.Love - Warszawa
+
+>>> T.Love King (target: poranek)
+  CANDIDATE: 0Fnp5tnZkJg | T.Love - King [Official Music Video] | 269s | T.LOVE | verified=True
+  OEMBED: T.Love - King [Official Music Video]
+  OK: 0Fnp5tnZkJg,269,T.Love - King
+
+>>> T.Love Ajrisz (target: poranek)
+  CANDIDATE: DcQWrT62YDo | T.Love - Ajrisz [Official Music Video] | 196s | T.LOVE | verified=True
+  OEMBED: T.Love - Ajrisz [Official Music Video]
+  OK: DcQWrT62YDo,196,T.Love - Ajrisz
+
+>>> T.Love Chlopaki nie placza (target: poranek)
+  CANDIDATE: X0lkrxFuGr8 | T.Love - Chlopaki Nie Placza [Official Music Video] | 247s | T.LOVE | verified=True
+  OEMBED: T.Love - Chlopaki Nie Placza [Official Music Video]
+  OK: X0lkrxFuGr8,247,T.Love - Chlopaki Nie Placza
+
+>>> Myslovitz Dlugosc dzwieku samotnosci (target: poranek)
+  CANDIDATE: A30Fx3wnfwE | Myslovitz - D³ugoœæ dŸwiêku samotnoœci (Lyric Video) | 252s | MyslovitzOfficial | verified=True
+  OEMBED: Myslovitz - D³ugoœæ dŸwiêku samotnoœci (Lyric Video)
+  OK: A30Fx3wnfwE,252,Myslovitz - D³ugoœæ dŸwiêku samotnoœci
+
+>>> Myslovitz Peggy Brown (target: poranek)
+  CANDIDATE: wQULTn59k1Q | Myslovitz - Peggy Brown / Przystanek Woodstock 1995 | 254s | Krêcio³aTV | verified=True
+  OEMBED: Myslovitz - Peggy Brown / Przystanek Woodstock 1995
+  TITLE MISMATCH: Myslovitz - Peggy Brown / Przystanek Woodstock 1995 | author=Krêcio³aTV
+
+>>> Myslovitz Sprzedawcy marzen (target: poranek)
+  CANDIDATE: FpbAPiTwrYI | Sprzedawcy marzeñ | 222s | Dawid Podsiad³o | verified=True
+  OEMBED: Sprzedawcy marzeñ
+  TITLE MISMATCH: Sprzedawcy marzeñ | author=Dawid Podsiad³o
+
+>>> Myslovitz Myszy i ludzie (target: poranek)
+  CANDIDATE: miNpof-9srQ | Myszy i ludzie | 329s | MyslovitzOfficial | verified=True
+  OEMBED: Myszy i ludzie
+  OK: miNpof-9srQ,329,Myszy i ludzie
+
+>>> Myslovitz Zwykly dzien (target: poranek)
+  CANDIDATE: 51ybQQvgA4g | Zwyk³y dzieñ | 191s | MyslovitzOfficial | verified=True
+  OEMBED: Zwyk³y dzieñ
+  OK: 51ybQQvgA4g,191,Zwyk³y dzieñ
+
+>>> Bajm Jozek nie ruszaj sie (target: poranek)
+  CANDIDATE: Pl0FomtG7S8 | Józek, nie darujê Ci tej nocy | 315s | Bajm | verified=True
+  OEMBED: Józek, nie darujê Ci tej nocy
+  OK: Pl0FomtG7S8,315,Józek, nie darujê Ci tej nocy
+
+>>> Bajm Biala armia (target: poranek)
+  CANDIDATE: y2p2glq7dz0 | Bia³a armia | 275s | Bajm | verified=True
+  OEMBED: Bia³a armia
+  OK: y2p2glq7dz0,275,Bia³a armia
+
+>>> Bajm Co mi panie dasz (target: poranek)
+  CANDIDATE: RrAn5pGqu_w | Co mi Panie dasz | 219s | Bajm | verified=True
+  OEMBED: Co mi Panie dasz
+  OK: RrAn5pGqu_w,219,Co mi Panie dasz
+
+>>> Lombard Przezyj to sam (target: poranek)
+  CANDIDATE: G7OgVpWQs5s | LOMBARD Prze¿yj to sam | 416s | LOMBARD | verified=True
+  OEMBED: LOMBARD Prze¿yj to sam
+  OK: G7OgVpWQs5s,416,LOMBARD Prze¿yj to sam
+
+>>> Lombard Szklana pogoda (target: poranek)
+  CANDIDATE: CaDX1GL5Yos | Szklana pogoda | 204s | LOMBARD | verified=True
+  OEMBED: Szklana pogoda
+  OK: CaDX1GL5Yos,204,Szklana pogoda
+
+>>> TSA 51 (target: poranek)
+  CANDIDATE: 1T3XR8CIfLM | TSA - 51 | 315s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: TSA - 51
+  OK: 1T3XR8CIfLM,315,TSA - 51
+
+>>> TSA Wielki mis (target: poranek)
+  CANDIDATE: BcykNH9Q2Bg | Hurra, œpiewamy - Smacznego | 181s | MINIVEVO | verified=True
+  OEMBED: Hurra, œpiewamy - Smacznego
+  TITLE MISMATCH: Hurra, œpiewamy - Smacznego | author=MINIVEVO
+
+>>> Kazik 12 groszy (target: poranek)
+  CANDIDATE: UAaW1BUSPP8 | KAZIK - 12 groszy [OFFICIAL VIDEO] | 372s | S.P. RECORDS | verified=True
+  OEMBED: KAZIK - 12 groszy [OFFICIAL VIDEO]
+  OK: UAaW1BUSPP8,372,KAZIK - 12 groszy
+
+>>> Kazik Bariera (target: poranek)
+  CANDIDATE: jNpezq9nbJ4 | Abradab Rahim Kleszcz - OBP | prod. ViktorV | ARKanoid | 258s | MaxFloRec TV | verified=True
+  OEMBED: Abradab Rahim Kleszcz - OBP | prod. ViktorV | ARKanoid
+  TITLE MISMATCH: Abradab Rahim Kleszcz - OBP | prod. ViktorV | ARKanoid | author=MaxFloRec TV
+
+>>> Strachy na Lachy Zycie to kratka (target: poranek)
+  CANDIDATE: nFBBD1Eim1E | STRACHY NA LACHY - Pi³a tango [OFFICIAL VIDEO] | 301s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Pi³a tango [OFFICIAL VIDEO]
+  TITLE MISMATCH: STRACHY NA LACHY - Pi³a tango | author=S.P. RECORDS
+
+>>> Strachy na Lachy Pi³a tango (target: poranek)
+  CANDIDATE: nFBBD1Eim1E | STRACHY NA LACHY - Pi³a tango [OFFICIAL VIDEO] | 301s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Pi³a tango [OFFICIAL VIDEO]
+  OK: nFBBD1Eim1E,301,STRACHY NA LACHY - Pi³a tango
+
+>>> Kult Parostatek (target: dzien)
+  CANDIDATE: 0nC_Q_z9d5w | Muzem Polskiej Piosenki - "Polska" Kult - Ogl¹daj w TVP Rozrywka | 208s | TVP VOD | verified=True
+  OEMBED: Muzem Polskiej Piosenki - "Polska" Kult - Ogl¹daj w TVP Rozrywka
+  TITLE MISMATCH: Muzem Polskiej Piosenki - "Polska" Kult - Ogl¹daj w TVP Rozrywka | author=TVP VOD
+
+>>> Kult Komendant (target: dzien)
+  CANDIDATE: VbF5qW8VBPk | STRACHY NA LACHY - List do Che [OFFICIAL AUDIO] | 316s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - List do Che [OFFICIAL AUDIO]
+  TITLE MISMATCH: STRACHY NA LACHY - List do Che | author=S.P. RECORDS
+
+>>> Kult Piosenka mury (target: dzien)
+  CANDIDATE: Es5bctpdHYM | STRACHY NA LACHY - Mury [OFFICIAL AUDIO] | 293s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Mury [OFFICIAL AUDIO]
+  OK: Es5bctpdHYM,293,STRACHY NA LACHY - Mury
+
+>>> Kult Dzien dobry Kocham cie (target: dzien)
+  CANDIDATE: _EdZbopNeS8 | STRACHY NA LACHY - Dzieñ dobry, kocham Ciê [OFFICIAL VIDEO] | 193s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Dzieñ dobry, kocham Ciê [OFFICIAL VIDEO]
+  OK: _EdZbopNeS8,193,STRACHY NA LACHY - Dzieñ dobry, kocham Ciê
+
+>>> Kult Twoje oczy lubia mnie (target: dzien)
+  CANDIDATE: b4NORbnAWEY | STRACHY NA LACHY - Twoje oczy lubi¹ mnie [OFFICIAL VIDEO] | 229s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Twoje oczy lubi¹ mnie [OFFICIAL VIDEO]
+  OK: b4NORbnAWEY,229,STRACHY NA LACHY - Twoje oczy lubi¹ mnie
+
+>>> Lady Pank Wciaz bardziej obcy (target: dzien)
+  CANDIDATE: LCpXRKEZ0vI | Lady Pank - Wci¹¿ bardziej obcy | 330s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Lady Pank - Wci¹¿ bardziej obcy
+  OK: LCpXRKEZ0vI,330,Lady Pank - Wci¹¿ bardziej obcy
+
+>>> Lady Pank Stacja Warszawa (target: dzien)
+  CANDIDATE: 4DZGoeCJB_Y | Lady Pank-Stacja Warszawa | 263s | abartrom | verified=False
+  OEMBED: Lady Pank-Stacja Warszawa
+  TITLE MISMATCH: Lady Pank-Stacja Warszawa | author=abartrom
+
+>>> Lady Pank Sztuczna (target: dzien)
+  CANDIDATE: mtfMx-pjD5g | SZTUCZNA INTELIGENCJA napisa³a mi piosenkê | 199s | Pawe³ Kieler | verified=True
+  OEMBED: SZTUCZNA INTELIGENCJA napisa³a mi piosenkê
+  TITLE MISMATCH: SZTUCZNA INTELIGENCJA napisa³a mi piosenkê | author=Pawe³ Kieler
+
+>>> Lady Pank Jestem z miasta (target: dzien)
+  CANDIDATE: nykAF2tPR2s | Lady Pank - Rodzice | 248s | LadyPankVEVO | verified=True
+  OEMBED: Lady Pank - Rodzice
+  TITLE MISMATCH: Lady Pank - Rodzice | author=LadyPankVEVO
+
+>>> Republika Smierc w bikini (target: dzien)
+  CANDIDATE: bDucj8Cz6bk | Œmieræ W Bikini | 265s | Republika | verified=True
+  OEMBED: Œmieræ W Bikini
+  OK: bDucj8Cz6bk,265,Œmieræ W Bikini
+
+>>> Republika Lawa (target: dzien)
+  CANDIDATE: -R7qqsT6-T8 | Republika - Mamona [Official Music Video] | 213s | Republika | verified=True
+  OEMBED: Republika - Mamona [Official Music Video]
+  TITLE MISMATCH: Republika - Mamona | author=Republika
+
+>>> Republika Balon (target: dzien)
+  CANDIDATE: 26UFbpZQDbo | ReTo - Balon (prod. Wroobel) | 196s | ReTo | verified=True
+  OEMBED: ReTo - Balon (prod. Wroobel)
+  TITLE MISMATCH: ReTo - Balon (prod. Wroobel) | author=ReTo
+
+>>> Republika Tak dlugo czekam (target: dzien)
+  CANDIDATE: IODz1z3CBRg | Kasia Moœ & Orkiestra Symfoniczna Filharmonii Dolnoœl¹skiej - Tak d³ugo czekam (Cia³o) - Republika | 372s | Kasia Moœ | verified=True
+  OEMBED: Kasia Moœ & Orkiestra Symfoniczna Filharmonii Dolnoœl¹skiej - Tak d³ugo czekam (Cia³o) - Republika
+  TITLE MISMATCH: Kasia Moœ & Orkiestra Symfoniczna Filharmonii Dolnoœl¹skiej - Tak d³ugo czekam (Cia³o) - Republika | author=Kasia Moœ
+
+>>> Dzem List do M (target: dzien)
+  CANDIDATE: -SK0y2dD_xQ | D¿em - List do M. - 40 urodziny (Live) | 534s | ZespolDzem | verified=True
+  OEMBED: D¿em - List do M. - 40 urodziny (Live)
+  OK: -SK0y2dD_xQ,534,D¿em - List do M. - 40 urodziny
+
+>>> Dzem Paw (target: dzien)
+  CANDIDATE: iYDtwOZ8Mec | Z³oty Paw (2003 Remaster) | 362s | ZespolDzem | verified=True
+  OEMBED: Z³oty Paw (2003 Remaster)
+  OK: iYDtwOZ8Mec,362,Z³oty Paw
+
+>>> Dzem We mnie jest milosc (target: dzien)
+  CANDIDATE: vdZUK85318w | D¿em - Do Ko³yski | 264s | ZespolDzem | verified=True
+  OEMBED: D¿em - Do Ko³yski
+  TITLE MISMATCH: D¿em - Do Ko³yski | author=ZespolDzem
+
+>>> Dzem Harley (target: dzien)
+  CANDIDATE: bqK5pwHHDbM | Harley mój (2003 Remaster) | 250s | ZespolDzem | verified=True
+  OEMBED: Harley mój (2003 Remaster)
+  OK: bqK5pwHHDbM,250,Harley mój
+
+>>> Budka Suflera Za ostatni grosz (target: dzien)
+  CANDIDATE: mDIC7GDPF-o | Budka Suflera - Za ostatni grosz | 291s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Budka Suflera - Za ostatni grosz
+  OK: mDIC7GDPF-o,291,Budka Suflera - Za ostatni grosz
+
+>>> Budka Suflera Nie wierz nigdy kobiecie (target: dzien)
+  CANDIDATE: OmwQXzuA6og | Budka Suflera - Nie wierz nigdy kobiecie (Spodek 99) #BudkaSuflera | 321s | Budka Suflera | verified=True
+  OEMBED: Budka Suflera - Nie wierz nigdy kobiecie (Spodek 99) #BudkaSuflera
+  OK: OmwQXzuA6og,321,Budka Suflera - Nie wierz nigdy kobiecie (Spodek 99) #BudkaSuflera
+
+>>> Budka Suflera Miedzy ciszami (target: dzien)
+  CANDIDATE: O9MJmKOu2xw | Cisza jak ta | 333s | Budka Suflera | verified=True
+  OEMBED: Cisza jak ta
+  TITLE MISMATCH: Cisza jak ta | author=Budka Suflera
+
+>>> Maanam Zadza (target: dzien)
+  CANDIDATE: 5UxSIBM14Q8 | ¯¹dza Pieni¹dza (2011 Remaster) | 275s | Maanam | verified=True
+  OEMBED: ¯¹dza Pieni¹dza (2011 Remaster)
+  OK: 5UxSIBM14Q8,275,¯¹dza Pieni¹dza
+
+>>> Maanam Cykady na Cykladach (target: dzien)
+  CANDIDATE: y97vh4CumoY | Cykady na Cykladach (2011 Remaster) | 180s | Maanam | verified=True
+  OEMBED: Cykady na Cykladach (2011 Remaster)
+  OK: y97vh4CumoY,180,Cykady na Cykladach
+
+>>> Maanam Boskie Buenos (target: dzien)
+  CANDIDATE: YdE2CRrmXek | Maanam - Boskie Buenos (Buenos Aires) [2021 Remaster] [Official  Audio] | 207s | Maanam | verified=True
+  OEMBED: Maanam - Boskie Buenos (Buenos Aires) [2021 Remaster] [Official  Audio]
+  OK: YdE2CRrmXek,207,Maanam - Boskie Buenos (Buenos Aires)
+
+>>> Perfect Kolysanka dla nieznajomej (target: dzien)
+  CANDIDATE: hHx7qyFufYc | Perfect - Ko³ysanka dla nieznajomej | 215s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Perfect - Ko³ysanka dla nieznajomej
+  OK: hHx7qyFufYc,215,Perfect - Ko³ysanka dla nieznajomej
+
+>>> Perfect Raz dzien (target: dzien)
+  CANDIDATE: kZuYff81-Fc | Perfect - Wszystko ma swój czas (official video) | 238s | Agencja Muzyczna Polskiego Radia | verified=True
+  OEMBED: Perfect - Wszystko ma swój czas (official video)
+  TITLE MISMATCH: Perfect - Wszystko ma swój czas | author=Agencja Muzyczna Polskiego Radia
+
+>>> Kult Jestem z miasta (target: wieczor)
+  CANDIDATE: I8NcELiIMHg | KULT - Gdy nie ma dzieci [OFFICIAL VIDEO] | 193s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Gdy nie ma dzieci [OFFICIAL VIDEO]
+  TITLE MISMATCH: KULT - Gdy nie ma dzieci | author=S.P. RECORDS
+
+>>> Kult Nie wiesz (target: wieczor)
+  CANDIDATE: ALP2ZFypnHY | KULT - Prosto [OFFICIAL VIDEO] | 283s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Prosto [OFFICIAL VIDEO]
+  TITLE MISMATCH: KULT - Prosto | author=S.P. RECORDS
+
+>>> Kult Dokonal sie czyn (target: wieczor)
+  CANDIDATE: x3kicEsx7g0 | KULT - Polska [OFFICIAL VIDEO] | 326s | S.P. RECORDS | verified=True
+  OEMBED: KULT - Polska [OFFICIAL VIDEO]
+  TITLE MISMATCH: KULT - Polska | author=S.P. RECORDS
+
+>>> Lady Pank To co mam (target: wieczor)
+  CANDIDATE: UVW6M8aRisk | Lady Pank - Milosc | 213s | LadyPankVEVO | verified=True
+  OEMBED: Lady Pank - Milosc
+  TITLE MISMATCH: Lady Pank - Milosc | author=LadyPankVEVO
+
+>>> Lady Pank Na granicy (target: wieczor)
+  CANDIDATE: NhbsXEGvmtk | Lady Pank - Rozmowa z... | 249s | LadyPankTVVEVO | verified=True
+  OEMBED: Lady Pank - Rozmowa z...
+  TITLE MISMATCH: Lady Pank - Rozmowa z... | author=LadyPankTVVEVO
+
+>>> Republika Ukryty kraj (target: wieczor)
+  CANDIDATE: fJ_R9w6ShPI | Informacje Telewizja Republika 18-07-2022 godz. 13:00 | TV Republika, tvrepublika.pl | 405s | Telewizja Republika | verified=True
+  OEMBED: Informacje Telewizja Republika 18-07-2022 godz. 13:00 | TV Republika, tvrepublika.pl
+  TITLE MISMATCH: Informacje Telewizja Republika 18-07-2022 godz. 13:00 | TV Republika, tvrepublika.pl | author=Telewizja Republika
+
+>>> Republika Masakra (target: wieczor)
+  CANDIDATE: jE4yfCKnuhw | Masakra | 226s | Republika | verified=True
+  OEMBED: Masakra
+  OK: jE4yfCKnuhw,226,Masakra
+
+>>> Dzem Sen o Victorii (target: wieczor)
+  CANDIDATE: 2xuq71bLtj8 | Sen o Victorii (2003 Remaster) | 344s | ZespolDzem | verified=True
+  OEMBED: Sen o Victorii (2003 Remaster)
+  OK: 2xuq71bLtj8,344,Sen o Victorii
+
+>>> Dzem Autsajder (target: wieczor)
+  CANDIDATE: emI8W9h3dtI | D¿em - Autsajder | 197s | ZespolDzem | verified=True
+  OEMBED: D¿em - Autsajder
+  OK: emI8W9h3dtI,197,D¿em - Autsajder
+
+>>> Dzem Jesiony (target: wieczor)
+  CANDIDATE: nLlub-v89XY | Jesiony (2003 Remaster) | 299s | ZespolDzem | verified=True
+  OEMBED: Jesiony (2003 Remaster)
+  OK: nLlub-v89XY,299,Jesiony
+
+>>> Budka Suflera Nie ma jak w domu (target: wieczor)
+  CANDIDATE: 2Hk5wgOOsmE | Budka Suflera - Jest taki samotny dom (Spodek 99) #BudkaSuflera | 392s | Budka Suflera | verified=True
+  OEMBED: Budka Suflera - Jest taki samotny dom (Spodek 99) #BudkaSuflera
+  OK: 2Hk5wgOOsmE,392,Budka Suflera - Jest taki samotny dom (Spodek 99) #BudkaSuflera
+
+>>> Budka Suflera Cala jestes z dreszczy (target: wieczor)
+  CANDIDATE: DvlRiFmbZBM | Budka Suflera & Felicjan Andrzejczak - Jolka, Jolka pamiêtasz... (Opole 2004) #BudkaSuflera | 364s | Budka Suflera | verified=True
+  OEMBED: Budka Suflera & Felicjan Andrzejczak - Jolka, Jolka pamiêtasz... (Opole 2004) #BudkaSuflera
+  TITLE MISMATCH: Budka Suflera & Felicjan Andrzejczak - Jolka, Jolka pamiêtasz... (Opole 2004) #BudkaSuflera | author=Budka Suflera
+
+>>> Budka Suflera Takie ladne oczy (target: wieczor)
+  CANDIDATE: Lt3A5hRtApc | Budka Suflera - Takie tango (Opole 2004) #BudkaSuflera | 278s | Budka Suflera | verified=True
+  OEMBED: Budka Suflera - Takie tango (Opole 2004) #BudkaSuflera
+  TITLE MISMATCH: Budka Suflera - Takie tango (Opole 2004) #BudkaSuflera | author=Budka Suflera
+
+>>> Maanam Ruchome piaski (target: wieczor)
+  CANDIDATE: ZVF5x-YzUBY | Varius Manx - Orla Cien (Video) | 182s | VariusManx | verified=True
+  OEMBED: Varius Manx - Orla Cien (Video)
+  TITLE MISMATCH: Varius Manx - Orla Cien | author=VariusManx
+
+>>> Maanam Sza³ niebieskich cia³ (target: wieczor)
+  CANDIDATE: 4aKKL1vlV0g | Maanam - Sza³ niebieskich cia³ (2021 Remaster) [Official  Audio] | 468s | Maanam | verified=True
+  OEMBED: Maanam - Sza³ niebieskich cia³ (2021 Remaster) [Official  Audio]
+  OK: 4aKKL1vlV0g,468,Maanam - Sza³ niebieskich cia³
+
+>>> Maanam Kocham cie (target: wieczor)
+  CANDIDATE: 9qRbjK4KPFc | Kocham Ciê, Kochanie Moje | 295s | Maanam | verified=True
+  OEMBED: Kocham Ciê, Kochanie Moje
+  OK: 9qRbjK4KPFc,295,Kocham Ciê, Kochanie Moje
+
+>>> Maanam Tamte dni (target: wieczor)
+  CANDIDATE: 6LyC_6n0ZHg | Zbigniew Wodecki - Lubiê wracaæ tam gdzie by³em (Official audio) | 263s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Zbigniew Wodecki - Lubiê wracaæ tam gdzie by³em (Official audio)
+  TITLE MISMATCH: Zbigniew Wodecki - Lubiê wracaæ tam gdzie by³em | author=MTJ Wytwórnia Muzyczna
+
+>>> Perfect Odnalezione szczescie (target: wieczor)
+  CANDIDATE: yHzBXTu3Hqw | Mesajah feat. Kamil Bednarek - Szukaj¹c Szczêœcia [Official Video] | 259s | UrbanRecTv | verified=True
+  OEMBED: Mesajah feat. Kamil Bednarek - Szukaj¹c Szczêœcia [Official Video]
+  TITLE MISMATCH: Mesajah feat. Kamil Bednarek - Szukaj¹c Szczêœcia | author=UrbanRecTv
+
+>>> Perfect Wszyscy razem (target: wieczor)
+  CANDIDATE: PbopjaATrCw | Fanatic - Wszyscy razem | 207s | Hulanka TV | verified=True
+  OEMBED: Fanatic - Wszyscy razem
+  TITLE MISMATCH: Fanatic - Wszyscy razem | author=Hulanka TV
+
+>>> Perfect Wyspa (target: wieczor)
+  CANDIDATE: Zh40jN3MrcE | Perfect  - Wyspa, drzewo, zamek | 200s | MTJ Wytwórnia Muzyczna | verified=True
+  OEMBED: Perfect  - Wyspa, drzewo, zamek
+  OK: Zh40jN3MrcE,200,Perfect - Wyspa, drzewo, zamek
+
+>>> T.Love Nie ma nie bedzie (target: wieczor)
+  CANDIDATE: frMejru65Vg | T.LOVE – POCHODNIA - goœcinnie Kasia Sienkiewicz (Kwiat Jab³oni) | 194s | T.LOVE | verified=True
+  OEMBED: T.LOVE – POCHODNIA - goœcinnie Kasia Sienkiewicz (Kwiat Jab³oni)
+  TITLE MISMATCH: T.LOVE – POCHODNIA - goœcinnie Kasia Sienkiewicz (Kwiat Jab³oni) | author=T.LOVE
+
+>>> Myslovitz To nie jest film (target: wieczor)
+  CANDIDATE: A30Fx3wnfwE | Myslovitz - D³ugoœæ dŸwiêku samotnoœci (Lyric Video) | 252s | MyslovitzOfficial | verified=True
+  OEMBED: Myslovitz - D³ugoœæ dŸwiêku samotnoœci (Lyric Video)
+  TITLE MISMATCH: Myslovitz - D³ugoœæ dŸwiêku samotnoœci | author=MyslovitzOfficial
+
+>>> Myslovitz Acidland (target: wieczor)
+  CANDIDATE: llM5cAMV-NA | Myslovitz - Acidland | 232s | MyslovitzOfficial | verified=True
+  OEMBED: Myslovitz - Acidland
+  OK: llM5cAMV-NA,232,Myslovitz - Acidland
+
+>>> Myslovitz Chce zeby ktos (target: wieczor)
+  CANDIDATE: A30Fx3wnfwE | Myslovitz - D³ugoœæ dŸwiêku samotnoœci (Lyric Video) | 252s | MyslovitzOfficial | verified=True
+  OEMBED: Myslovitz - D³ugoœæ dŸwiêku samotnoœci (Lyric Video)
+  TITLE MISMATCH: Myslovitz - D³ugoœæ dŸwiêku samotnoœci | author=MyslovitzOfficial
+
+>>> Bajm Miedzy ciszami (target: wieczor)
+  NO RESULTS
+
+>>> Bajm Ten sam (target: wieczor)
+  CANDIDATE: y2p2glq7dz0 | Bia³a armia | 275s | Bajm | verified=True
+  OEMBED: Bia³a armia
+  TITLE MISMATCH: Bia³a armia | author=Bajm
+
+>>> Strachy na Lachy Nieustraszony (target: wieczor)
+  CANDIDATE: R71t7JAsu4Q | STRACHY NA LACHY - Ostatki - nie widzisz stawki [OFFICIAL VIDEO] | 215s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Ostatki - nie widzisz stawki [OFFICIAL VIDEO]
+  TITLE MISMATCH: STRACHY NA LACHY - Ostatki - nie widzisz stawki | author=S.P. RECORDS
+
+>>> Strachy na Lachy Dzieñ dobry (target: wieczor)
+  CANDIDATE: _EdZbopNeS8 | STRACHY NA LACHY - Dzieñ dobry, kocham Ciê [OFFICIAL VIDEO] | 193s | S.P. RECORDS | verified=True
+  OEMBED: STRACHY NA LACHY - Dzieñ dobry, kocham Ciê [OFFICIAL VIDEO]
+  OK: _EdZbopNeS8,193,STRACHY NA LACHY - Dzieñ dobry, kocham Ciê
+
+WROTE noc.txt (18 tracks)
+
+WROTE poranek.txt (15 tracks)
+
+WROTE dzien.txt (14 tracks)
+
+WROTE wieczor.txt (10 tracks)
+
+WROTE popoludnie.txt (14 tracks)
+
+Skipped: 40
+Total OK: 71

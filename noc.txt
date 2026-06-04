@@ -1,0 +1,20 @@
+# NiC Radio - Playlista NOC
+# Format: ID_YOUTUBE,DLUGOSC_W_SEKUNDACH,TYTUL
+
+A8d3QBMWUgs,216,KULT - Arahja
+DqBuIaa2-_s,272,KULT - Baranek
+I8NcELiIMHg,193,KULT - Gdy nie ma dzieci
+sK9dKSPyNPw,395,KULT - Hej czy nie wiecie
+x3kicEsx7g0,326,KULT - Polska
+CGVGsvhyy5M,343,KULT - Wróci wiosna, baronowo
+csGo9-sPVRY,259,Lady Pank - Zawsze tam gdzie Ty
+Lc-26SnSmok,239,Lady Pank - Mniej niż zero
+2lZNlsEoc9Q,246,Lady Pank - Tacy sami
+Iioi5LjzZo8,235,Republika - Odchodząc
+WcwZcqeGccw,265,Telefony
+UNXGNd-Drfc,325,Whisky
+dsu3E4bEwBs,408,Dżem - 35 Urodziny - Wehikuł czasu
+n7h4l7ayAhU,313,Czerwony Jak Cegła
+hHx7qyFufYc,215,Perfect - Kołysanka dla nieznajomej
+1n0MupX-7AM,274,Perfect - Autobiografia
+Yspb7Pu5fvc,274,Krakowski spleen

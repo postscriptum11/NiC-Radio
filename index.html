@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="NiC Radio - Pseudo-Live 24/7">
+    <title>NiC Radio</title>
+    <link rel="icon" type="image/svg+xml" href="nic radio.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="passwordModal" class="modal" aria-modal="true" role="dialog">
+        <div class="modal-content">
+            <div class="modal-logo">
+                <img src="nic radio.svg?v=2" alt="NiC Radio Logo">
+            </div>
+            <h1 class="modal-title">NiC Radio</h1>
+            <p class="modal-subtitle">Podaj hasło, aby słuchać radia</p>
+            <form id="passwordForm" class="modal-form" autocomplete="off">
+                <input
+                    type="password"
+                    id="passwordInput"
+                    class="modal-input"
+                    placeholder="Hasło"
+                    aria-label="Hasło dostępu"
+                    required
+                >
+                <button type="submit" id="passwordSubmit" class="modal-button">OTWÓRZ</button>
+            </form>
+            <p id="passwordError" class="modal-error" role="alert" aria-live="polite"></p>
+        </div>
+    </div>
+
+    <main id="radioApp" class="radio-app hidden" aria-hidden="true">
+        <div class="logo-container">
+            <img src="nic radio.svg?v=2" alt="NiC Radio" class="logo">
+        </div>
+
+        <button id="playButton" class="play-button" type="button" aria-label="Włącz radio">
+            <span class="play-icon" aria-hidden="true">
+                <svg class="icon-play" viewBox="0 0 24 24" width="28" height="28">
+                    <path d="M8 5v14l11-7z" fill="currentColor"/>
+                </svg>
+                <svg class="icon-pause" viewBox="0 0 24 24" width="28" height="28">
+                    <path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/>
+                </svg>
+            </span>
+            <span id="playLabel" class="play-label">WŁĄCZ RADIO</span>
+        </button>
+
+        <div class="info-panel">
+            <div class="program-label">TERAZ NA ANTENIE</div>
+            <div id="currentProgram" class="current-program">—</div>
+            <div class="track-label">ODTWARZANE</div>
+            <div id="trackTitle" class="track-title">—</div>
+        </div>
+
+        <div id="statusIndicator" class="status-indicator">
+            <span class="status-dot"></span>
+            <span id="statusText">OFFLINE</span>
+        </div>
+    </main>
+
+    <div id="youtubePlayer" class="youtube-player-hidden" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>NiC Radio - Generator Playlist</title>
+    <style>
+        :root {
+            --color-black: #000;
+            --color-red: #720000;
+            --color-pink: #f851d4;
+            --color-yellow: #f5c44a;
+            --color-white: #fff;
+            --gradient-main: linear-gradient(135deg, #720000 0%, #f851d4 100%);
+            --gradient-text: linear-gradient(135deg, #f851d4 0%, #f5c44a 100%);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+            background: #000;
+            color: #fff;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+        }
+        body {
+            padding: 1.5rem 1rem;
+            background-image:
+                radial-gradient(circle at 20% 20%, rgba(114, 0, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(248, 81, 212, 0.1) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+        .container { max-width: 960px; margin: 0 auto; }
+        h1 {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            color: var(--color-pink);
+            margin-bottom: 0.4rem;
+            text-shadow: 0 0 20px rgba(248, 81, 212, 0.5);
+        }
+        .subtitle { color: rgba(255,255,255,0.6); margin-bottom: 1.5rem; font-size: 0.95rem; }
+        h2 {
+            color: var(--color-yellow);
+            font-size: 0.85rem;
+            margin: 1.5rem 0 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+        label { display: block; margin-bottom: 1rem; }
+        label > span {
+            display: block;
+            color: var(--color-pink);
+            font-size: 0.8rem;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            background: rgba(0,0,0,0.6);
+            border: 1.5px solid rgba(248, 81, 212, 0.3);
+            border-radius: 8px;
+            color: var(--color-white);
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+        input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+            outline: none;
+            border-color: var(--color-pink);
+            box-shadow: 0 0 0 3px rgba(248, 81, 212, 0.15);
+        }
+        textarea { resize: vertical; min-height: 130px; }
+        .buttons { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1.5rem 0; }
+        button {
+            padding: 0.8rem 1.4rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+        }
+        .btn-primary { background: var(--gradient-main); color: #fff; }
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(248, 81, 212, 0.5);
+        }
+        .btn-secondary {
+            background: rgba(245, 196, 74, 0.15);
+            color: var(--color-yellow);
+            border: 1.5px solid rgba(245, 196, 74, 0.4);
+        }
+        .btn-secondary:hover:not(:disabled) { background: rgba(245, 196, 74, 0.25); }
+        .btn-tertiary {
+            background: transparent;
+            color: rgba(255,255,255,0.5);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        button:disabled { opacity: 0.4; cursor: not-allowed; }
+        #status {
+            padding: 0.7rem 0.9rem;
+            border-radius: 6px;
+            margin: 0.5rem 0 1rem;
+            font-size: 0.85rem;
+            min-height: 1.5rem;
+        }
+        #status:empty { display: none; }
+        #status.info { background: rgba(248, 81, 212, 0.12); border-left: 3px solid var(--color-pink); }
+        #status.error { background: rgba(255, 100, 100, 0.12); border-left: 3px solid #ff6464; color: #ff8888; }
+        #status.success { background: rgba(126, 255, 126, 0.12); border-left: 3px solid #7eff7e; color: #7eff7e; }
+        .help {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(248, 81, 212, 0.2);
+            border-radius: 8px;
+            padding: 0 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .help summary {
+            cursor: pointer;
+            padding: 0.7rem 0;
+            color: var(--color-yellow);
+            font-weight: 600;
+            list-style: none;
+            font-size: 0.85rem;
+        }
+        .help summary::-webkit-details-marker { display: none; }
+        .help summary::before { content: '▸ '; }
+        .help[open] summary::before { content: '▾ '; }
+        .help ol, .help p {
+            padding: 0.4rem 0 0.5rem 1.5rem;
+            font-size: 0.8rem;
+            line-height: 1.6;
+            color: rgba(255,255,255,0.75);
+        }
+        .help a { color: var(--color-pink); }
+        .hint {
+            color: rgba(245, 196, 74, 0.85);
+            font-size: 0.8rem;
+            margin: -0.5rem 0 0;
+            font-style: italic;
+        }
+        .help code {
+            background: rgba(248, 81, 212, 0.15);
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            color: var(--color-pink);
+            font-size: 0.85em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.5rem 0 1rem;
+            font-size: 0.85rem;
+        }
+        th, td {
+            padding: 0.5rem 0.4rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        th {
+            color: var(--color-yellow);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        td input[type="text"], td input[type="number"] {
+            padding: 0.35rem 0.5rem;
+            font-size: 0.8rem;
+            border-radius: 4px;
+        }
+        td input[type="number"] { width: 75px; }
+        td code {
+            font-family: 'Consolas', monospace;
+            font-size: 0.75rem;
+            color: var(--color-pink);
+        }
+        .remove-btn {
+            background: rgba(255, 100, 100, 0.15);
+            color: #ff8888;
+            border: 1px solid rgba(255, 100, 100, 0.3);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.7rem;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+        .remove-btn:hover { background: rgba(255, 100, 100, 0.3); }
+        pre {
+            background: rgba(0,0,0,0.5);
+            border: 1px solid rgba(248, 81, 212, 0.2);
+            border-radius: 8px;
+            padding: 0.9rem;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.8rem;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            word-break: break-all;
+            max-height: 300px;
+            overflow-y: auto;
+            color: var(--color-yellow);
+        }
+        .summary-bar {
+            background: rgba(0,0,0,0.4);
+            border: 1px solid rgba(248, 81, 212, 0.2);
+            border-radius: 6px;
+            padding: 0.6rem 0.9rem;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .summary-bar strong { color: var(--color-pink); }
+        .summary-bar .total { color: var(--color-yellow); font-family: 'Consolas', monospace; }
+        .audience-header {
+            background: linear-gradient(135deg, rgba(114, 0, 0, 0.25) 0%, rgba(248, 81, 212, 0.18) 100%);
+            border: 1px solid rgba(248, 81, 212, 0.3);
+            border-radius: 8px;
+            padding: 0.6rem 1rem;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.85);
+        }
+        .audience-header strong { color: var(--color-yellow); font-size: 1rem; }
+        ::selection {
+            background: linear-gradient(135deg, var(--color-red) 0%, var(--color-pink) 100%);
+            color: var(--color-white);
+        }
+        ::-moz-selection {
+            background: linear-gradient(135deg, var(--color-red) 0%, var(--color-pink) 100%);
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 Generator Playlist</h1>
+        <p class="subtitle">Wklej linki YouTube → pobierz plik .txt dla NiC Radio</p>
+
+        <details class="help">
+            <summary>Skąd pobierane są tytuły i długości?</summary>
+            <p><strong>Domyślnie (bez klucza API):</strong> używamy <strong>Piped API</strong> — publicznego frontendu YouTube z włączonym CORS, zwraca tytuł i długość w sekundach jednym zapytaniem. Fallback: YouTube oEmbed (tytuł) + CORS proxy (długość).</p>
+            <p><strong>Opcjonalnie — klucz YouTube Data API v3</strong> (najszybsze, oficjalne):</p>
+            <ol>
+                <li><a href="https://console.cloud.google.com" target="_blank">Google Cloud Console</a> → nowy projekt</li>
+                <li>APIs &amp; Services → Enable APIs → <strong>YouTube Data API v3</strong></li>
+                <li>Credentials → Create Credentials → <strong>API key</strong></li>
+                <li>W kluczu ustaw <em>Application restrictions → None</em> (lub dodaj swoją domenę), inaczej przeglądarka dostanie 403</li>
+                <li>Wklej klucz w polu poniżej — zostanie zapamiętany w localStorage</li>
+            </ol>
+            <p>Format wyjścia: <code>ID,SEKUNDY,tytuł</code> — kompatybilny z <code>script.js</code>.</p>
+        </details>
+
+        <label>
+            <span>🔑 Klucz API YouTube (opcjonalny — przyspiesza działanie):</span>
+            <input type="text" id="apiKey" placeholder="AIzaSy... (zostaw puste jeśli nie potrzebujesz)" autocomplete="off">
+        </label>
+
+        <label>
+            <span>📻 Nazwa audycji (opcjonalnie):</span>
+            <input type="text" id="audienceName" placeholder="np. Poranek, Wieczór, Noc...">
+        </label>
+
+        <label>
+            <span>📁 Nazwa pliku wyjściowego:</span>
+            <input type="text" id="filename" value="playlist.txt" placeholder="np. popoludnie.txt">
+        </label>
+
+        <label>
+            <span>🔗 Linki YouTube (jeden na linię):</span>
+            <textarea id="urls" rows="6" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ
+https://youtu.be/9bZkp7q19f0
+YQHsXMglC9A  (można też samo ID)
+..."></textarea>
+        </label>
+
+        <div class="buttons">
+            <button id="parseBtn" class="btn-primary">Parsuj i pobierz dane</button>
+            <button id="downloadBtn" class="btn-secondary" disabled>Pobierz .txt</button>
+            <button id="clearBtn" class="btn-tertiary">Wyczyść</button>
+        </div>
+        <p class="hint">Wklej linki, a potem kliknij przycisk pobierania danych.</p>
+
+        <div id="status"></div>
+
+        <h2>Utwory (edytowalne):</h2>
+        <div id="audienceHeader" class="audience-header" style="display:none">
+            📻 <span>Audycja: <strong id="audienceNameDisplay"></strong></span>
+        </div>
+        <div id="summary" class="summary-bar" style="display:none">
+            <span><strong id="trackCount">0</strong> utworów</span>
+            <span>Suma: <span class="total" id="totalDuration">0s</span> (<span id="totalFormatted">0:00:00</span>)</span>
+        </div>
+        <table id="tracksTable" style="display:none">
+            <thead>
+                <tr>
+                    <th style="width:30px">#</th>
+                    <th style="width:110px">ID</th>
+                    <th>Tytuł</th>
+                    <th style="width:85px">Długość (s)</th>
+                    <th style="width:65px"></th>
+                </tr>
+            </thead>
+            <tbody id="tracksBody"></tbody>
+        </table>
+
+        <h2>📄 Podgląd pliku .txt:</h2>
+        <pre id="output">Dodaj linki i kliknij "Parsuj linki"...</pre>
+    </div>
+
+    <script>
+        const apiKeyInput = document.getElementById('apiKey');
+        const filenameInput = document.getElementById('filename');
+        const urlsInput = document.getElementById('urls');
+        const parseBtn = document.getElementById('parseBtn');
+        const downloadBtn = document.getElementById('downloadBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const statusDiv = document.getElementById('status');
+        const tracksTable = document.getElementById('tracksTable');
+        const tracksBody = document.getElementById('tracksBody');
+        const output = document.getElementById('output');
+        const summary = document.getElementById('summary');
+        const trackCount = document.getElementById('trackCount');
+        const totalDuration = document.getElementById('totalDuration');
+        const totalFormatted = document.getElementById('totalFormatted');
+
+        let tracks = [];
+
+        apiKeyInput.value = localStorage.getItem('nicApiKey') || '';
+        apiKeyInput.addEventListener('change', () => {
+            localStorage.setItem('nicApiKey', apiKeyInput.value);
+        });
+
+        const audienceNameInput = document.getElementById('audienceName');
+        const audienceHeader = document.getElementById('audienceHeader');
+        const audienceNameDisplay = document.getElementById('audienceNameDisplay');
+        audienceNameInput.value = localStorage.getItem('nicAudienceName') || '';
+        function updateAudienceHeader() {
+            const name = audienceNameInput.value.trim();
+            if (name) {
+                audienceNameDisplay.textContent = name;
+                audienceHeader.style.display = '';
+            } else {
+                audienceHeader.style.display = 'none';
+            }
+        }
+        audienceNameInput.addEventListener('input', () => {
+            localStorage.setItem('nicAudienceName', audienceNameInput.value);
+            updateAudienceHeader();
+            const name = audienceNameInput.value.trim();
+            if (name && (filenameInput.value === 'playlist.txt' || filenameInput.value === '')) {
+                filenameInput.value = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '.txt';
+            }
+        });
+        updateAudienceHeader();
+
+        function setStatus(msg, type) {
+            statusDiv.textContent = msg;
+            statusDiv.className = type || 'info';
+        }
+
+        function escapeHtml(s) {
+            return String(s || '').replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+        }
+
+        function extractYouTubeId(input) {
+            if (!input) return null;
+            const s = String(input).trim();
+            if (/^[a-zA-Z0-9_-]{11}$/.test(s)) return s;
+            const patterns = [
+                /[?&]v=([a-zA-Z0-9_-]{11})/,
+                /youtu\.be\/([a-zA-Z0-9_-]{11})/,
+                /embed\/([a-zA-Z0-9_-]{11})/,
+                /\/v\/([a-zA-Z0-9_-]{11})/,
+                /shorts\/([a-zA-Z0-9_-]{11})/
+            ];
+            for (const p of patterns) {
+                const m = s.match(p);
+                if (m) return m[1];
+            }
+            return null;
+        }
+
+        function parseISO8601Duration(iso) {
+            const m = iso.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/);
+            if (!m) return 0;
+            return (parseInt(m[1]||0,10)*3600) + (parseInt(m[2]||0,10)*60) + parseInt(m[3]||0,10);
+        }
+
+        function formatHMS(sec) {
+            const h = Math.floor(sec / 3600);
+            const m = Math.floor((sec % 3600) / 60);
+            const s = sec % 60;
+            return h + ':' + String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+        }
+
+        async function fetchVideoInfoBatch(ids, apiKey) {
+            const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&id=${ids.join(',')}&key=${apiKey}`;
+            const res = await fetch(url);
+            if (!res.ok) {
+                const err = await res.json().catch(() => ({}));
+                throw new Error(err.error?.message || ('HTTP ' + res.status));
+            }
+            const data = await res.json();
+            const result = {};
+            for (const item of data.items || []) {
+                result[item.id] = {
+                    title: item.snippet.title,
+                    duration: parseISO8601Duration(item.contentDetails.duration)
+                };
+            }
+            return result;
+        }
+
+        function decodeHtmlEntities(s) {
+            const txt = document.createElement('textarea');
+            txt.innerHTML = s;
+            return txt.value;
+        }
+
+        let youtubeIframeApiPromise = null;
+        function loadYouTubeIframeApi() {
+            if (youtubeIframeApiPromise) return youtubeIframeApiPromise;
+            youtubeIframeApiPromise = new Promise((resolve, reject) => {
+                if (window.YT && window.YT.Player) { resolve(); return; }
+                const tag = document.createElement('script');
+                tag.src = 'https://www.youtube.com/iframe_api';
+                tag.onerror = () => reject(new Error('Nie udało się załadować YouTube IFrame API'));
+                window.onYouTubeIframeAPIReady = () => resolve();
+                document.head.appendChild(tag);
+            });
+            return youtubeIframeApiPromise;
+        }
+
+        async function fetchVideoInfoIframe(id, timeoutMs) {
+            timeoutMs = timeoutMs || 8000;
+            if (!window.YT || !window.YT.Player) {
+                await loadYouTubeIframeApi().catch(() => null);
+                if (!window.YT || !window.YT.Player) return { title: '', duration: 0 };
+            }
+            return new Promise((resolve) => {
+                let done = false;
+                const finish = (data) => { if (!done) { done = true; resolve(data); } };
+                const container = document.createElement('div');
+                container.style.cssText = 'position:absolute;left:-9999px;top:-9999px;width:320px;height:180px;pointer-events:none;';
+                document.body.appendChild(container);
+                let player = null;
+                const cleanup = () => {
+                    try { if (player && player.destroy) player.destroy(); } catch (e) {}
+                    if (container.parentNode) container.parentNode.removeChild(container);
+                };
+                try {
+                    player = new YT.Player(container, {
+                        videoId: id,
+                        playerVars: { autoplay: 0, controls: 0, playsinline: 1, mute: 1 },
+                        events: {
+                            onReady: (e) => {
+                                try {
+                                    const duration = Math.round(e.target.getDuration());
+                                    const title = (e.target.getVideoData() && e.target.getVideoData().title) || '';
+                                    finish({ title, duration });
+                                } catch (err) { finish({ title: '', duration: 0 }); }
+                                cleanup();
+                            },
+                            onError: () => { finish({ title: '', duration: 0 }); cleanup(); }
+                        }
+                    });
+                } catch (e) { finish({ title: '', duration: 0 }); cleanup(); }
+                setTimeout(() => { finish({ title: '', duration: 0 }); cleanup(); }, timeoutMs);
+            });
+        }
+
+        async function fetchVideoInfoFree(ids, onProgress) {
+            const pipedInstances = [
+                'https://pipedapi.kavin.rocks',
+                'https://pipedapi.adminforge.de',
+                'https://pipedapi.lunar.icu',
+                'https://pipedapi.privacydev.net',
+            ];
+            const proxies = [
+                url => 'https://corsproxy.io/?' + encodeURIComponent(url),
+                url => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(url),
+                url => 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(url),
+            ];
+            const result = {};
+            const concurrency = 4;
+            let cursor = 0;
+
+            async function worker() {
+                while (cursor < ids.length) {
+                    const idx = cursor++;
+                    const id = ids[idx];
+                    const watchUrl = 'https://www.youtube.com/watch?v=' + id;
+                    let title = '';
+                    let duration = 0;
+
+                    // 1. Piped API (CORS-enabled, title+duration w jednym zapytaniu)
+                    for (const instance of pipedInstances) {
+                        if (title && duration > 0) break;
+                        try {
+                            const res = await fetch(instance + '/streams/' + id);
+                            if (res.ok) {
+                                const data = await res.json();
+                                if (data.title && !title) title = data.title;
+                                if (typeof data.duration === 'number' && data.duration > 0 && duration === 0) {
+                                    duration = data.duration;
+                                }
+                            }
+                        } catch (e) { /* try next instance */ }
+                    }
+
+                    // 2. Fallback: oEmbed (tytuł)
+                    if (!title) {
+                        try {
+                            const oembedRes = await fetch('https://www.youtube.com/oembed?url=' + encodeURIComponent(watchUrl) + '&format=json');
+                            if (oembedRes.ok) {
+                                const data = await oembedRes.json();
+                                title = data.title || '';
+                            }
+                        } catch (e) { /* ignore */ }
+                    }
+
+                    // 3. Fallback: CORS proxy + og:video:duration lub lengthSeconds
+                    if (duration === 0) {
+                        for (const proxyFn of proxies) {
+                            try {
+                                const pageRes = await fetch(proxyFn(watchUrl));
+                                if (pageRes.ok) {
+                                    const html = await pageRes.text();
+                                    let m = html.match(/"lengthSeconds"\s*:\s*"?(\d+)/);
+                                    if (m) {
+                                        duration = parseInt(m[1], 10);
+                                        break;
+                                    }
+                                    m = html.match(/<meta\s+itemprop="duration"\s+content="(PT[^"]+)"/);
+                                    if (m) {
+                                        duration = parseISO8601Duration(m[1]);
+                                        break;
+                                    }
+                                }
+                            } catch (e) { /* try next proxy */ }
+                        }
+                    }
+
+                    // 4. YouTube IFrame API (ostatnia deska ratunku - wolne ale pewne)
+                    if (!title || duration === 0) {
+                        try {
+                            const info = await fetchVideoInfoIframe(id, 8000);
+                            if (!title && info.title) title = info.title;
+                            if (duration === 0 && info.duration > 0) duration = info.duration;
+                        } catch (e) { /* ignore */ }
+                    }
+
+                    if (title || duration > 0) {
+                        result[id] = { title: title || '[Brak tytułu]', duration: duration };
+                    }
+                    if (onProgress) onProgress(idx + 1, ids.length);
+                }
+
+            await Promise.all(Array(concurrency).fill(0).map(worker));
+            return result;
+        }
+                    if (onProgress) onProgress(idx + 1, ids.length);
+                }
+            }
+
+            await Promise.all(Array(concurrency).fill(0).map(worker));
+            return result;
+        }
+
+        function renderTracks() {
+            tracksBody.innerHTML = '';
+            tracks.forEach((t, i) => {
+                const row = document.createElement('tr');
+                row.innerHTML = '<td>' + (i+1) + '</td>' +
+                    '<td><code>' + escapeHtml(t.id) + '</code></td>' +
+                    '<td><input type="text" data-idx="' + i + '" data-field="title" value="' + escapeHtml(t.title) + '" placeholder="Tytuł utworu"></td>' +
+                    '<td><input type="number" data-idx="' + i + '" data-field="duration" value="' + (t.duration||'') + '" min="1" placeholder="0"></td>' +
+                    '<td><button class="remove-btn" data-idx="' + i + '">Usuń</button></td>';
+                tracksBody.appendChild(row);
+            });
+            tracksBody.querySelectorAll('input').forEach(inp => {
+                inp.addEventListener('input', e => {
+                    const idx = parseInt(e.target.dataset.idx, 10);
+                    const field = e.target.dataset.field;
+                    tracks[idx][field] = field === 'duration' ? (parseInt(e.target.value,10) || 0) : e.target.value;
+                    updateOutput();
+                    updateSummary();
+                });
+            });
+            tracksBody.querySelectorAll('.remove-btn').forEach(btn => {
+                btn.addEventListener('click', e => {
+                    const idx = parseInt(e.target.dataset.idx, 10);
+                    tracks.splice(idx, 1);
+                    renderTracks();
+                    updateOutput();
+                    updateSummary();
+                });
+            });
+            updateSummary();
+        }
+
+        function updateOutput() {
+            const valid = tracks.filter(t => t.id && t.title && t.duration > 0);
+            const content = valid.map(t => t.id + ',' + t.duration + ',' + t.title).join('\n');
+            output.textContent = content || 'Uzupełnij tytuły i długości, aby zobaczyć podgląd.';
+        }
+
+        function updateSummary() {
+            const valid = tracks.filter(t => t.id && t.title && t.duration > 0);
+            const total = valid.reduce((sum, t) => sum + (t.duration||0), 0);
+            trackCount.textContent = valid.length;
+            totalDuration.textContent = total + 's';
+            totalFormatted.textContent = formatHMS(total);
+            summary.style.display = tracks.length > 0 ? '' : 'none';
+        }
+
+        parseBtn.addEventListener('click', async () => {
+            parseBtn.disabled = true;
+            try {
+                const lines = urlsInput.value.split('\n').map(s => s.trim()).filter(Boolean);
+                if (lines.length === 0) {
+                    setStatus('Wklej przynajmniej jeden link YouTube.', 'error');
+                    return;
+                }
+                const ids = [];
+                for (const line of lines) {
+                    const id = extractYouTubeId(line);
+                    if (id && ids.indexOf(id) === -1) ids.push(id);
+                }
+                if (ids.length === 0) {
+                    setStatus('Nie znaleziono prawidłowych linków YouTube.', 'error');
+                    return;
+                }
+                tracks = ids.map(id => ({ id: id, title: '', duration: 0 }));
+                renderTracks();
+                tracksTable.style.display = '';
+                downloadBtn.disabled = false;
+
+                const apiKey = apiKeyInput.value.trim();
+                if (apiKey) {
+                    setStatus('Pobieranie danych z YouTube API (' + ids.length + ' filmów)...', 'info');
+                    try {
+                        const batchSize = 50;
+                        for (let i = 0; i < ids.length; i += batchSize) {
+                            const batch = ids.slice(i, i + batchSize);
+                            const info = await fetchVideoInfoBatch(batch, apiKey);
+                            for (const id of batch) {
+                                const track = tracks.find(t => t.id === id);
+                                if (track) {
+                                    if (info[id]) {
+                                        track.title = info[id].title;
+                                        track.duration = info[id].duration;
+                                    } else {
+                                        track.title = '[Niedostępny]';
+                                    }
+                                }
+                            }
+                        }
+                        setStatus('✓ Pobrano dane dla ' + ids.length + ' filmów. Sprawdź i pobierz .txt.', 'success');
+                    } catch (e) {
+                        setStatus('Błąd API: ' + e.message + '. Wpisz dane ręcznie.', 'error');
+                    }
+                } else {
+                    setStatus('Pobieranie tytułów i długości (bez klucza API, przez proxy)...', 'info');
+                    try {
+                        const info = await fetchVideoInfoFree(ids, (done, total) => {
+                            setStatus('Pobieranie: ' + done + '/' + total + ' filmów...', 'info');
+                        });
+                        for (const id of ids) {
+                            const track = tracks.find(t => t.id === id);
+                            if (track) {
+                                if (info[id]) {
+                                    track.title = info[id].title;
+                                    track.duration = info[id].duration;
+                                } else {
+                                    track.title = '[Niedostępny]';
+                                }
+                            }
+                        }
+                        const successCount = Object.keys(info).length;
+                        if (successCount > 0) {
+                            setStatus('✓ Pobrano dane dla ' + successCount + '/' + ids.length + ' filmów. Sprawdź i pobierz .txt.', 'success');
+                        } else {
+                            setStatus('⚠ Nie udało się pobrać danych. Wpisz tytuły i długości ręcznie.', 'error');
+                        }
+                    } catch (e) {
+                        setStatus('Błąd pobierania: ' + e.message + '. Wpisz dane ręcznie.', 'error');
+                    }
+                }
+                renderTracks();
+                updateOutput();
+            } finally {
+                parseBtn.disabled = false;
+            }
+        });
+
+        downloadBtn.addEventListener('click', () => {
+            const valid = tracks.filter(t => t.id && t.title && t.duration > 0);
+            if (valid.length === 0) {
+                setStatus('Brak prawidłowych utworów (potrzebne: ID + tytuł + długość > 0).', 'error');
+                return;
+            }
+            const content = valid.map(t => t.id + ',' + t.duration + ',' + t.title).join('\n');
+            const filename = (filenameInput.value.trim() || 'playlist.txt').replace(/[^a-zA-Z0-9._-]/g, '_');
+            const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            setStatus('✓ Pobrano ' + valid.length + ' utworów jako ' + filename, 'success');
+        });
+
+        clearBtn.addEventListener('click', () => {
+            urlsInput.value = '';
+            tracks = [];
+            tracksBody.innerHTML = '';
+            tracksTable.style.display = 'none';
+            summary.style.display = 'none';
+            downloadBtn.disabled = true;
+            output.textContent = 'Dodaj linki i kliknij "Parsuj linki"...';
+            setStatus('', 'info');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# NiC Radio - Harmonogram ramówki 24/7
+# Format: HH:MM,nazwa_pliku_playlisty,uzyj_intro (1 = tak, 0 = nie)
+# Pierwszy blok MUSI zaczynać się o 00:00
+# Kolejność linii może być dowolna - skrypt sam sortuje po czasie
+
+00:00,noc.txt,0
+06:00,poranek.txt,1
+10:00,dzien.txt,0
+14:00,popoludnie.txt,0
+18:00,wieczor.txt,1
+22:00,noc.txt,0

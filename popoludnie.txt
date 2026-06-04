@@ -1,0 +1,17 @@
+# NiC Radio - Playlista POPOŁUDNIE
+# Format: ID_YOUTUBE,DLUGOSC_W_SEKUNDACH,TYTUL
+
+Es5bctpdHYM,293,STRACHY NA LACHY - Mury
+_EdZbopNeS8,193,STRACHY NA LACHY - Dzień dobry, kocham Cię
+b4NORbnAWEY,229,STRACHY NA LACHY - Twoje oczy lubią mnie
+LCpXRKEZ0vI,330,Lady Pank - Wciąż bardziej obcy
+bDucj8Cz6bk,265,Śmierć W Bikini
+-SK0y2dD_xQ,534,Dżem - List do M. - 40 urodziny
+iYDtwOZ8Mec,362,Złoty Paw
+bqK5pwHHDbM,250,Harley mój
+mDIC7GDPF-o,291,Budka Suflera - Za ostatni grosz
+OmwQXzuA6og,321,Budka Suflera - Nie wierz nigdy kobiecie
+5UxSIBM14Q8,275,Żądza Pieniądza
+y97vh4CumoY,180,Cykady na Cykladach
+YdE2CRrmXek,207,Maanam - Boskie Buenos (Buenos Aires)
+hHx7qyFufYc,215,Perfect - Kołysanka dla nieznajomej

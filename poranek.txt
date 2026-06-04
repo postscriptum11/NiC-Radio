@@ -1,0 +1,18 @@
+# NiC Radio - Playlista PORANEK
+# Format: ID_YOUTUBE,DLUGOSC_W_SEKUNDACH,TYTUL
+
+59JGY-K0BeQ,257,T.Love - Warszawa
+0Fnp5tnZkJg,269,T.Love - King
+DcQWrT62YDo,196,T.Love - Ajrisz
+X0lkrxFuGr8,247,T.Love - Chlopaki Nie Placza
+A30Fx3wnfwE,252,Myslovitz - Długość dźwięku samotności
+miNpof-9srQ,329,Myszy i ludzie
+51ybQQvgA4g,191,Zwykły dzień
+Pl0FomtG7S8,315,Józek, nie daruję Ci tej nocy
+y2p2glq7dz0,275,Biała armia
+RrAn5pGqu_w,219,Co mi Panie dasz
+G7OgVpWQs5s,416,LOMBARD Przeżyj to sam
+CaDX1GL5Yos,204,Szklana pogoda
+1T3XR8CIfLM,315,TSA - 51
+UAaW1BUSPP8,372,KAZIK - 12 groszy
+nFBBD1Eim1E,301,STRACHY NA LACHY - Piła tango

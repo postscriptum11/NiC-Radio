@@ -1,0 +1,13 @@
+# NiC Radio - Playlista WIECZÓR
+# Format: ID_YOUTUBE,DLUGOSC_W_SEKUNDACH,TYTUL
+
+jE4yfCKnuhw,226,Masakra
+2xuq71bLtj8,344,Sen o Victorii
+emI8W9h3dtI,197,Dżem - Autsajder
+nLlub-v89XY,299,Jesiony
+2Hk5wgOOsmE,392,Budka Suflera - Jest taki samotny dom
+4aKKL1vlV0g,468,Maanam - Szał niebieskich ciał
+9qRbjK4KPFc,295,Kocham Cię, Kochanie Moje
+Zh40jN3MrcE,200,Perfect - Wyspa, drzewo, zamek
+llM5cAMV-NA,232,Myslovitz - Acidland
+_EdZbopNeS8,193,STRACHY NA LACHY - Dzień dobry, kocham Cię
