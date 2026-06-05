@@ -720,6 +720,15 @@
         } catch (e) { /* ignore */ }
         setTimeout(applyAllowAutoplay, 50);
         performSync();
+        if (state.isPlaying) {
+            try {
+                event.target.playVideo();
+                setStatus('NA ŻYWO', 'online');
+                debugLogAdd('Play (po załadowaniu)', 'ok');
+            } catch (e) {
+                debugLogAdd('pending playVideo fail: ' + e.message, 'error');
+            }
+        }
     }
 
     function onPlayerStateChange(event) {
@@ -1131,26 +1140,28 @@
     }
 
     function handlePlayToggle() {
-        if (!state.playerReady) {
-            setStatus('Ładowanie odtwarzacza...', 'offline');
-            return;
-        }
         if (state.isPlaying) {
             try { state.player.pauseVideo(); } catch (e) { /* ignore */ }
             setPlaying(false);
             setStatus('Wstrzymano', 'offline');
             debugLogAdd('Pauza', 'info');
-        } else {
-            try {
-                state.player.unMute();
-                state.player.setVolume(100);
-                state.player.playVideo();
-            } catch (e) { debugLogAdd('playVideo fail: ' + e.message, 'error'); }
-            setPlaying(true);
-            performSync();
-            setStatus('NA ŻYWO', 'online');
-            debugLogAdd('Play', 'ok');
+            return;
         }
+        state.isPlaying = true;
+        setPlaying(true);
+        if (!state.playerReady) {
+            setStatus('Ładowanie odtwarzacza...', 'offline');
+            debugLogAdd('Play (oczekuje na player)', 'info');
+            return;
+        }
+        try {
+            state.player.unMute();
+            state.player.setVolume(100);
+            state.player.playVideo();
+        } catch (e) { debugLogAdd('playVideo fail: ' + e.message, 'error'); }
+        performSync();
+        setStatus('NA ŻYWO', 'online');
+        debugLogAdd('Play', 'ok');
     }
 
     /* ============================================================
