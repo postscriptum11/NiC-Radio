@@ -46,6 +46,8 @@ html, body {
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: var(--font-main);
+    font-size: 16px;
+    line-height: 1.5;
     overflow-x: hidden;
 }
 
@@ -200,6 +202,7 @@ body {
     color: var(--color-white);
     font-family: var(--font-main);
     font-size: 1rem;
+    line-height: 1.5;
     transition: var(--transition-smooth);
     outline: none;
 }
